@@ -13,48 +13,44 @@ class _SeedViewState extends State<SeedView> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(20),
+      padding: const EdgeInsets.fromLTRB(20, 20, 20, 0),
       child: Column(children: [
-        Expanded(
-          flex: 1,
-          child: Container(
-            padding: const EdgeInsets.fromLTRB(20, 20, 20, 0),
-            child: const Text(
-              "Pilih bibit terbaik anda",
-              textAlign: TextAlign.left,
-              style: TextStyle(
-                color: Color.fromARGB(255, 22, 5, 5),
-                fontWeight: FontWeight.bold,
-                fontSize: 20,
-              ),
+        Container(
+          padding: const EdgeInsets.fromLTRB(20, 0, 20, 15),
+          child: const Text(
+            "Pilih bibit terbaik anda",
+            textAlign: TextAlign.left,
+            style: TextStyle(
+              color: Color.fromARGB(255, 22, 5, 5),
+              fontWeight: FontWeight.bold,
+              fontSize: 22,
             ),
           ),
         ),
         Expanded(
-            flex: 8,
             child: Container(
-              child: GridView.builder(
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 3,
-                    crossAxisSpacing: 8,
-                    mainAxisSpacing: 8,
-                    mainAxisExtent: MediaQuery.of(context).size.width * 0.4),
-                itemCount: listSeed.length,
-                itemBuilder: (context, index) {
-                  return GestureDetector(
-                    child: gridComponent(listSeed[index].namaTanaman,
-                        listSeed[index].imgAssets, context),
-                    onTap: () {
-                      // Navigator.pushNamed(context, '/detail',
-                      //     arguments: DetailArgs(
-                      //         namaTanaman: listSeed[index].namaTanaman,
-                      //         imgAssets: listSeed[index].imgAssets,
-                      //     ));
-                    },
-                  );
+          child: GridView.builder(
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 3,
+                crossAxisSpacing: 8,
+                mainAxisSpacing: 8,
+                mainAxisExtent: MediaQuery.of(context).size.width * 0.4),
+            itemCount: listSeed.length,
+            itemBuilder: (context, index) {
+              return GestureDetector(
+                child: gridComponent(listSeed[index].namaTanaman,
+                    listSeed[index].imgAssets, context),
+                onTap: () {
+                  // Navigator.pushNamed(context, '/detail',
+                  //     arguments: DetailArgs(
+                  //         namaTanaman: listSeed[index].namaTanaman,
+                  //         imgAssets: listSeed[index].imgAssets,
+                  //     ));
                 },
-              ),
-            )),
+              );
+            },
+          ),
+        )),
       ]),
     );
   }

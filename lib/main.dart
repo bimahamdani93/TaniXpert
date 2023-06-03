@@ -14,6 +14,7 @@ import 'package:tanixpert_apps/pages/weather_view.dart';
       '/weather': (context) => WeatherView(),
       '/pesticide': (context) => PesticideView(),
     },
+    debugShowCheckedModeBanner: false,
     home: LayoutView(),
   ));
 

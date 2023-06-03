@@ -24,4 +24,6 @@ class Custom {
   static const IconData cloud = IconData(0xe800, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData leaf = IconData(0xe801, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData pestisida = IconData(0xe802, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData wind = IconData(0xe803, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData water = IconData(0xe804, fontFamily: _kFontFam, fontPackage: _kFontPkg);
 }
