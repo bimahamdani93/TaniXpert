@@ -17,17 +17,16 @@ class SplashView extends StatelessWidget {
         ),
         child: Center(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Container(
-                margin: EdgeInsets.only(bottom: 500),
+                margin: EdgeInsets.only(bottom: 250, top: 325),
                 child: Text(
                   'TaniXpert',
                   style: TextStyle(
                     fontFamily: 'Montserrat',
                     color: Colors.white,
-                    // font from assers/fonts/Montserrat
-                    fontSize: 75,
+                    fontSize: 50,
                   ),
                 ),
               ),
@@ -50,7 +49,7 @@ class SplashView extends StatelessWidget {
                   );
                 },
                 child: Container(
-                  width: 325.0,
+                  width: 250.0,
                   height: 65.0,
                   child: Center(
                     child: Text(
