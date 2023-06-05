@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:tanixpert_apps/models/seeds.dart';
+import 'package:tanixpert_apps/pages/detail_page/detail_seed_view.dart';
 
 class SeedView extends StatefulWidget {
   const SeedView({super.key});
@@ -41,6 +42,14 @@ class _SeedViewState extends State<SeedView> {
                 child: gridComponent(listSeed[index].namaTanaman,
                     listSeed[index].imgAssets, context),
                 onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => SeedsDetail(
+                        seed: listSeed[index],
+                      ),
+                    ),
+                  );
                   // Navigator.pushNamed(context, '/detail',
                   //     arguments: DetailArgs(
                   //         namaTanaman: listSeed[index].namaTanaman,
