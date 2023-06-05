@@ -66,6 +66,7 @@ flutter:
     - assets/images/jagung.png
     - assets/images/padi.png
     - assets/images/wortel.png
+    - assets/images/BG.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
@@ -82,6 +83,9 @@ flutter:
     - family: Custom
       fonts:
         - asset: assets/fonts/Custom.ttf
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/Montserrat-Regular.ttf
       
   #   - family: Trajan Pro
   #     fonts:
