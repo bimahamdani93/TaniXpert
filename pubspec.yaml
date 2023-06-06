@@ -67,6 +67,8 @@ flutter:
     - assets/images/padi.png
     - assets/images/wortel.png
     - assets/images/BG.png
+    - assets/images/
+    - assets/images/detail_seeds/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
