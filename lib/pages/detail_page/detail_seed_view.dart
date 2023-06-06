@@ -29,6 +29,14 @@ class SeedsDetail extends StatelessWidget {
                   SizedBox(
                     height: 20,
                   ),
+                  Image.asset(
+                    seed.gambar_benih_1,
+                    width: 300,
+                    fit: BoxFit.cover,
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
                   ListView.builder(
                     shrinkWrap: true,
                     itemCount: seed.listDeskripsiTambahan.length,
