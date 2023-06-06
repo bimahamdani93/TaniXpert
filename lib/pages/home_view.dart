@@ -34,7 +34,7 @@ class _HomeViewState extends State<HomeView> {
                             color: Colors.white, size: 30.0)),
                     Container(
                       margin: EdgeInsets.only(left: 20),
-                      child: Text("Sidoarjo, Jawa Timur",
+                      child: Text("Malang, Jawa Timur",
                           style: TextStyle(
                               fontFamily: "Montserrat",
                               fontSize: 20,

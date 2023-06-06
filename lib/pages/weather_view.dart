@@ -24,7 +24,7 @@ class _WeatherViewState extends State<WeatherView> {
                       color: HexColor("#5D9C59"), size: 30.0)),
               Container(
                 margin: EdgeInsets.only(left: 10),
-                child: Text("Sidoarjo, Jawa Timur",
+                child: Text("Malang, Jawa Timur",
                     style: TextStyle(
                         fontFamily: "Montserrat",
                         fontSize: 20,
