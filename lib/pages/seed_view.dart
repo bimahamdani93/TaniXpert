@@ -50,11 +50,7 @@ class _SeedViewState extends State<SeedView> {
                       ),
                     ),
                   );
-                  // Navigator.pushNamed(context, '/detail',
-                  //     arguments: DetailArgs(
-                  //         namaTanaman: listSeed[index].namaTanaman,
-                  //         imgAssets: listSeed[index].imgAssets,
-                  //     ));
+                 
                 },
               );
             },
